@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photomatic</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style>
+		.img-responsive{
+			margin: 30px auto;
+		}
+		#thumbnailsPane img.smallImg{
+			width: 150px;
+			height: 83px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+			<!-- <div class="alert alert-success" role="alert">
+				<p>Enjoy the slide jQuery plugin</p>
+			</div> -->
+			<div id="thumbnailsPane">
+	          <img class="smallImg" src="thumbnails/3body.jpg"/>
+	          <img class="smallImg" src="thumbnails/lake.jpg"/>
+	          <img class="smallImg" src="thumbnails/jump2.jpg"/>
+	          <img class="smallImg" src="thumbnails/jump.jpg"/>
+	          <img class="smallImg" src="thumbnails/headshot.jpg"/>
+	          <img class="smallImg" src="thumbnails/portrait.jpg"/>
+	          
+	        </div>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.easyzoom.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+        $("#thumbnailsPane img").easyzoom();
+      });
+    </script>
+</body>
+</html>
